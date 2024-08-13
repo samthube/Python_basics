@@ -3,7 +3,7 @@
 @Date: 2024-08-12 
 @Last Modified by: Samadhan Thube
 @Last Modified time:2024-08-12 
-@Title :To check weather the number is Even or Odd
+@Title :To find largest number among 3
 '''
 def largest(num1 , num2, num3):
     """
