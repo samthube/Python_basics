@@ -5,8 +5,20 @@
 @Last Modified time: 2024-08-13
 @Title : Program to check perfect number
 '''
-divisors = []
+
 def perfect_num(num):
+    """
+Description:
+    Function used to add divsors of number in the list
+Parameter:
+      only divisors of given number are added to the list
+Return:
+      None
+"""
+    if num <= 0:
+        return "Not a valid input for perfect number."
+    
+    divisors = []
     if(num > 0):
         i =1
         while (i < num):
@@ -14,19 +26,19 @@ def perfect_num(num):
             if (remainder == 0):
                 divisors.append(i)
             i += 1
-    
-
-def add():
-    temp = 0
-    for val in divisors:
-        sum = val + temp
-        temp = sum
-    if (temp == num):
-        print(divisors ,"=" , num)
+    total = sum(divisors)
+    if total == num:
+        print(divisors, "=", num)
         return "Perfect Number"
     else:
         return "Not Perfect Number"
 
-num = int(input("Enter the number: "))
-perfect_num(num)
-print(add())
+
+def main():
+
+    num = int(input("Enter the number: "))
+    function = perfect_num(num)
+    print(function)
+
+if __name__ == "__main__":
+    main()

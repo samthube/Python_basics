@@ -5,18 +5,18 @@
 @Last Modified time: 2024-08-13
 @Title : Program to print fibonacci series 
 '''
-fibonacciList = [0,1]
+
 
 def fibonacci(num):
     """
-Description:
-    Function used to print fibonacci series
-Parameter:
-      Series will be printed till given number
-Return:
-      Fibonacci series
-"""
-
+    Description:
+        Function to generate and return a Fibonacci series up to the given number.
+    Parameter:
+        num (int): The upper limit of the Fibonacci series.
+    Return:
+        list: The Fibonacci series up to the given number.
+    """
+    fibonacciList = [0,1]
     num1 = 0
     num2 = 1
     num3 = 0
@@ -27,5 +27,10 @@ Return:
         fibonacciList.append(num3)      
     return fibonacciList
 
-num = int ( input("Enter the Number upto which Series to be printed : "))
-print(fibonacci(num))
+def main():
+
+    num = int ( input("Enter the Number upto which Series to be printed : "))
+    print(fibonacci(num))
+
+if __name__ == "__main__" :
+    main()

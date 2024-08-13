@@ -6,6 +6,14 @@
 @Title : Program to check prime number
 '''
 def prime_number(num):
+    """
+    Description:
+        Function to check if a given number is prime.
+    Parameter:
+        num (int): The number to be checked.
+    Return:
+        None
+    """
 
     count = 2
     while (count < num):
@@ -17,5 +25,9 @@ def prime_number(num):
     if(remainder != 0):
         print("Prime Number")  
 
-num = int(input("Enter the Number:"))
-prime_number(num)
+def main():
+    num = int(input("Enter the Number:"))
+    function = prime_number(num)
+
+if __name__ == "__main__":
+    main()
